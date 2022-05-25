@@ -1,6 +1,7 @@
 html{
     background-color: beige;
     font-family: Verdana, Geneva, Tahoma, sans-serif;
+    /*border: 1px solid red;*/
 }
 
 body{
@@ -9,12 +10,19 @@ body{
 
 header{
     padding: 12px;
+    display: grid;
+    grid-template-columns: auto 1fr;
+    column-gap: 24px;
 }
 
 footer{
     background-color: burlywood;
     margin-top: 24px;
     padding: 24px;
+    display:grid;
+    grid-template-columns: 1fr 1fr;
+    column-gap: 24px;
+    align-items: center;
 }
 
 main{
@@ -26,14 +34,20 @@ main{
     background-color: white;
     border: 1px solid lightblue;
     padding:24px;
+    display:grid;
+    grid-template-columns: auto 1fr;
+    grid-template-rows: auto 1fr;
+    column-gap: 24px;
 }
 
 .book-cover{
     width: 200px;
     height: auto;
+    grid-row-start:1;
+    grid-row-end: 6;
 }
 
-.boot-title{
+.book-title{
     font-weight:bold;
     font-size:150%;
 }
